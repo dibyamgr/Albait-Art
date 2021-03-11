@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: 'Malayalam';
+    font-weight: normal;
+    src: url("../../fonts/MalayalamMN.woff");
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+ul, ol{
+    margin: 0;
+    padding: 0;
+    // list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: $text-color;
+
+    &:hover{
+        cursor: pointer;
+        text-decoration: none;
+    }
+}
+
+.main-content{
+    background: $background;
+}
+
+// Buttons
+.primary-btn{
+    background: #111;
+    color: #fff;
+    border-radius: 0;
+    width: 100%;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-size: 14px;
+
+    &:hover{
+        background-color: #000;
+        color: #fff;
+    }
+}

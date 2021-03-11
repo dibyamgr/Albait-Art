@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> .: Al Bait Art Boutique :. </title>
+
+    <!-- CDN Links Here -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+    <!-- CSS Here -->
+    <link rel="stylesheet" href="sass/style.css">
+
+</head>
+
+<body>
+    <div class="bg-cover set-bg" data-setbg="images/bg.png">
+
+        <!-- Side Navbar  -->
+        <div id="Sidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">× <span>Close</span> </a>
+            <a href="#">Collection</a>
+            <a href="#">Brand Story</a>
+            <a href="#">WTD Perfumery</a>
+            <a href="#">Gift Card</a>
+            <a href="#">Gallery & Shop</a>
+            <a href="#">Bespoke Service</a>
+            <a href="#">Book an Appointment</a>
+
+            <div class="contact-btn my-4 text-center">
+                <button class="btn primary-btn">Contact</button>
+            </div>
+        </div>
+        <!-- Side Navbar Ends -->
+
+        <!-- Book An Appointment -->
+        <div id="Appointment" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">× <span>Close</span> </a>
+            <h6 class="title">Book an Appointment</h6>
+
+            <form action="" class="booking-appointment__form">
+                <div class="form-group">
+                    <input type="text" placeholder="Name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="number" placeholder="Tel" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email" class="form-control">
+                </div>
+                <div class="form-row">
+                    <div class="col-7 form-group d-flex align-items-center">
+                        <label class="control-label" for="datepicker">Date</label>
+                        <input type="date" class="form-control" id="datepicker">
+                    </div>
+                    <div class="col-5 form-group d-flex align-items-center">
+                        <label class="control-label" for="timepicker">Time</label>
+                        <input type="time" class="form-control" id="timepicker">
+                    </div>
+                </div>
+
+                <label class="mb-3">Why you want to visit us?</label>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="shoppingCheck">
+                    <label class="custom-control-label" for="shoppingCheck">Shopping</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="visitCheck">
+                    <label class="custom-control-label" for="visitCheck">Visit</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="meetingCheck">
+                    <label class="custom-control-label" for="meetingCheck">Meeting</label>
+                </div>
+            </form>
+
+            <div class="contact-btn my-4 text-center">
+                <button class="btn primary-btn">Book Now</button>
+            </div>
+        </div>
+        <!-- Book An Appointment -->
+
+        <!-- Search Form -->
+        <div id="SearchPanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">× <span>Close</span> </a>
+            <form class="form-inline search-form my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+
+            </form>
+
+            <!-- Suggested -->
+            <h6 class="title">Suggested</h6>
+            <ul>
+                <li>
+                    <a href="">Rugs</a>
+                </li>
+                <li>
+                    <a href="">Candles</a>
+                </li>
+                <li>
+                    <a href="">Souvenirs</a>
+                </li>
+                <li>
+                    <a href="">Incense Burner</a>
+                </li>
+            </ul>
+
+            <div class="contact-btn my-4 text-center">
+                <button class="btn primary-btn">Search</button>
+            </div>
+        </div>
+        <!-- Search Form Ends-->
+
+        <!-- Header Section Starts -->
+        <header class="header-section">
+            <div class="container header-container">
+                <div class="row">
+                    <!-- Search Form -->
+                    <div class="col-2 col-md-2 col-lg-3">
+
+                        <div class="search-form__wrapper">
+                            <a class="openbtn" onclick="openSearch()"> <span class="fa fa-search"></span> </a>
+                        </div>
+                    </div>
+
+                    <!-- Logo Wrapper -->
+                    <div class="col-2 col-md-4 col-lg-3 logo-area">
+                        <div class="logo-wrapper text-right">
+                            <img src="images/logo.png" alt="Logo" class="logo">
+                        </div>
+                    </div>
+
+                    <!-- Right Widgets -->
+                    <div class="col-8 col-md-6 col-lg-6">
+                        <div class="d-flex justify-content-end">
+                            <!-- Book Appointment -->
+                            <div class="book-wrapper mr-3">
+                                <a class="openbtn" onclick="bookAppointment()"> Book an Appointment </a>
+                            </div>
+
+                            <!-- Social links -->
+                            <div class="social-links mr-3">
+                                <ul>
+                                    <li><a href="#"> <i class="fa fa-instagram"></i> </a> </li>
+                                    <li><a href="#"> <i class="fa fa-facebook"></i> </a> </li>
+
+                                </ul>
+                            </div>
+
+                            <!-- Order -->
+                            <div class="order-btn__wrapper mr-3 text-center text-uppercase">
+                                <a href="#">
+                                    <span class="ri-shopping-bag-line"></span>
+                                    Order
+                                </a>
+                            </div>
+
+                            <!-- Menu -->
+                            <div class="menu-wrapper text-center">
+                                <a class="openbtn" onclick="openNav()">
+                                    <img src="images/menuIcon.png" alt="">
+                                    Menu
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header Section Ends -->
+    </div>
+
+    <div id="main" class="main-content">
+        <div class="container">
+            <div class="py-3 text-center">
+                <!-- <h4>Checkout your Products</h4> -->
+            </div>
+
+            <div class="row">
+                <!-- Order Summary Card -->
+                <div class="col-md-5 order-md-2 mb-4 order-summary-card">
+                    <ul class="list-group mb-3 bg-white p-3">
+                        <h6 class="d-flex justify-content-between align-items-center">
+                            <span class="text-muted">Order Summary</span>
+                        </h6>
+                        <hr>
+                        <li class="d-flex justify-content-between lh-condensed mb-3">
+                            <div class="img-wrapper">
+                                <img src="images/collections/Collection2.jpg" alt="">
+                            </div>
+                            <div>
+                                <h6 class="my-0">Candles</h6>
+                                <small class="text-muted">Quantity: 1</small>
+                            </div>
+                            <span class="text-muted">$1000</span>
+                        </li>
+                        <li class="d-flex justify-content-between lh-condensed mb-3">
+                            <div class="img-wrapper">
+                                <img src="images/collections/9.jpg" alt="">
+                            </div>
+                            <div>
+                                <h6 class="my-0">Rugs</h6>
+                                <small class="text-muted">Quantity: 1</small>
+                            </div>
+                            <span class="text-muted">$1000</span>
+                        </li>
+                        
+                        <hr class="mb-4">
+
+                        <form class="mb-4">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Enter Your Promo code">
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-secondary">Redeem</button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <li class="d-flex justify-content-between bg-light mb-2">
+                            <div class="text-success">
+                                <h6 class="my-0">Promo code</h6>
+                            </div>
+                            <span class="text-success">-100</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                            <span>Order Total </span>
+                            <strong>$1900 </strong>
+                        </li>
+                    </ul>
+
+                    
+                  
+                    <form class="needs-validation checkout-form" novalidate="">
+                        <div class="row text-center">
+                            <button class="btn btn-primary primary-btn checkout-btn ml-3" type="submit">Checkout <span class="fa fa-long-arrow-right"></span> </button>
+                        </div>
+                    </form>
+                </div>
+                <!-- Billing Address -->
+                <div class="col-md-7 order-md-1">
+                    <h6 class="mb-3 font-weight-bold">Checkout Details</h6>
+                    <form class="needs-validation checkout-form" novalidate="">
+
+                        <div class="mb-3">
+                            <h6 class="float-left">Contact Information</h6>
+                            <label class="float-right">Already Have an Account? <a href="#" class="text-success">Log in</a> </label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                            <div class="invalid-feedback">
+                                Please enter a valid email address for shipping updates.
+                            </div>
+                        </div>
+                        <div class="custom-control custom-checkbox mb-5">
+                            <input type="checkbox" class="custom-control-input" id="">
+                            <label class="custom-control-label" for="">Keep me up to date on news and exclusive offers </label>
+
+                        </div>
+
+                        <h6>Shipping Address</h6>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control" id="firstName" placeholder="First Name" value=""
+                                    required="">
+                                <div class="invalid-feedback">
+                                    Valid first name is required.
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control" id="lastName" placeholder="Last Name" value=""
+                                    required="">
+                                <div class="invalid-feedback">
+                                    Valid last name is required.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="address" placeholder="Address" required="">
+                            <div class="invalid-feedback">
+                                Please enter your shipping address.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="address2" placeholder="Apartment or suite (Optional)">
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-5 mb-3">
+                                <select class="custom-select w-100" id="country" required="">
+                                    <option value="">Country</option>
+                                    <option>Option1</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a valid country.
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <select class="custom-select w-100" id="state" required="">
+                                    <option value="">State</option>
+                                    <option>Option1</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please provide a valid state.
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <input type="text" class="form-control" id="zip" placeholder="Postal Code" required="">
+                                <div class="invalid-feedback">
+                                    Zip code required.
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="mb-4">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="same-address">
+                            <label class="custom-control-label" for="same-address">Shipping address is the same as my
+                                billing address</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="save-info">
+                            <label class="custom-control-label" for="save-info">Save this information for next
+                                time</label>
+                        </div>
+                        <div class="mt-3">
+                            <label for="email">Note About Your Order</label>
+                            <textarea type="" class="form-control" id="order-note" placeholder=""></textarea>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="newsletter-section text-center d-none mt-5">
+        <div class="section-title">
+            <h3>Subscribe our Newsletter</h3>
+            <p>You can trust us, your email address is safe with us.</p>
+        </div>
+
+        <div class="row no-gutters newsletter-form-wrapper mt-5 py-5">
+            <div class="ui-decorator">
+                <img src="images/ui-decorator.png" alt="">
+            </div>
+
+            <div class="col-12">
+                <form class="input-group newsletter-form mt-3">
+                    <input type="text" class="form-control" placeholder="Enter your email address"
+                        aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button type="submit" class="input-group-text subscribe-btn"
+                            id="basic-addon2">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 form-group form-check mt-3">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">By subscribing to our newsletter you agree to our
+                    privacy policy*.</label>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer-section pt-5 pb-3">
+        <div class="container main-container">
+            <div class="border-ui">
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <p>Copyright @AlBait Art Boutique 2021 | Rights Reserved</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <ul class="footer-menu d-flex align-items-end justify-content-between">
+                        <li>
+                            <a href="#">Terms & Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#">Cancellation Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Section Ends-->
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/carousel.js"></script>
+
+</body>
+
+</html>

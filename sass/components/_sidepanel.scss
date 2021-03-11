@@ -1,0 +1,63 @@
+.sidepanel {
+    width: 0;
+    position: fixed;
+    z-index: 4;
+    height: 100%;
+    top: 0;
+    // right: 8rem;
+    right: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.8s;
+    padding-top: 6rem;
+
+    h6, a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 300;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+
+        &:hover {
+            color: #111;
+        }
+    }
+
+    .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 24px;
+        text-align: center;
+
+        span{
+            display: block;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+    }
+
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #111;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+
+
+        &:hover {
+            background-color: #444;
+        }
+    }
+
+    .contact-btn{
+        padding: 8px;
+    }
+
+    .book-btn{
+        padding: 30px;
+    }
+}

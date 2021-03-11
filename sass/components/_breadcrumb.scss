@@ -1,0 +1,61 @@
+/*---------------------
+  Breadcrumb
+-----------------------*/
+.breadcrumb-section {
+    background-image: url("../images/collections/11.jpg");
+    min-height: 400px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 45px 0 40px;
+    position: relative;
+
+    .bg-overlay {
+        background: #232323;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        opacity: 0.6;
+    }
+}
+
+.breadcrumb__text {
+
+    h2 {
+        font-size: 46px;
+        color: #fff;
+        font-weight: 700;
+    }
+}
+
+.breadcrumb__option {
+
+    a {
+        display: inline-block;
+        font-size: 16px;
+        color: #fff;
+        font-weight: 700;
+        margin-right: 20px;
+        position: relative;
+
+        &:after {
+            position: absolute;
+            right: -12px;
+            top: 13px;
+            height: 1px;
+            width: 10px;
+            background: #fff;
+            content: '';
+        }
+    }
+
+    span {
+        display: inline-block;
+        font-size: 16px;
+        color: #fff;
+    }
+}

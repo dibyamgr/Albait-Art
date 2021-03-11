@@ -1,0 +1,254 @@
+/*---------------------
+  Product Details
+-----------------------*/
+.product__details__images__item {
+    margin-bottom: 20px;
+
+    img {
+        min-width: 100%;
+        border: 1px solid #f5f5f5;
+        box-shadow: 0px 9px 13px 2px #e6e6e6;
+        padding: 2rem;
+    }
+}
+
+.product__details__images__slider {
+
+    img {
+        cursor: pointer;
+    }
+
+    &.owl-carousel .owl-item img {
+        width: auto;
+        width: auto;
+        border: 1px solid #f5f5f5;
+        padding: 7px;
+        height: 6rem;
+    }
+}
+
+
+.product__details__content {
+
+    .category-title{
+        background: #000;
+        color: #fff;
+        padding: 0.2rem 0.4rem;
+    }
+
+    .product-title {
+        font-weight: 500;
+        line-height: 2rem;
+        
+    }
+
+    .product__details__rating {
+        font-size: 14px;
+        margin-bottom: 12px;
+
+        i {
+            margin-right: -2px;
+            color: #EDBB0E;
+        }
+
+        span {
+            color: #dd2222;
+            margin-left: 4px;
+            font-weight: 500;
+        }
+    }
+
+    .product__details__price {
+        // border-top: 1px solid #f5f5f5;
+        border-bottom: 1px solid #f5f5f5;
+        padding-bottom: 10px;
+
+        h4 {
+            display: inline-block;
+        }
+
+        del {
+            color: $primary-color;
+            font-weight: 500;
+        }
+
+
+        .price-offer {
+            display: inline-block;
+            font-size: 12px !important;
+            background: #fff;
+            float: none;
+            padding: 4px 7px;
+            margin-top: 5px;
+            margin-right: 6px;
+            text-align: center;
+            background: #61ba62;
+            color: #fff;
+            border-radius: 3px;
+        }
+    }
+
+    .product__descriptions {
+        font-weight: 400;
+        font-size: 14px;
+        // color: #999;
+        margin-bottom: 6px;
+    }
+}
+
+.btn__add-to-cart {
+    padding: 10px 20px 10px;
+    margin-right: 6px;
+    margin-bottom: 5px;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+
+.btn-buy-now {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+    text-transform: uppercase;
+}
+
+.heart-icon {
+    display: inline-block;
+    font-size: 16px;
+    
+    padding: 13px 16px 13px;
+    
+}
+
+
+.product__details__quantity {
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.pro-qty {
+    width: 140px;
+    height: 50px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    // background: $background;
+    margin-bottom: 5px;
+
+    input {
+        height: 100%;
+        width: 100%;
+        font-size: 16px;
+        width: 50px;
+        border: none;
+        // background: $background;
+        text-align: center;
+    }
+
+    .qtybtn {
+        width: 35px;
+        padding: 5px 0px;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+        border: none;
+       
+    }
+}
+
+#sync1 {
+    .item {
+        margin: 5px;
+        color: #FFF;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img{
+            height: 30rem;
+            width: 100%;
+        }
+    }
+}
+
+#sync2 {
+    .item {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        // padding: 10px 0px;
+        margin: 5px;
+        color: #FFF;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        text-align: center;
+        cursor: pointer;
+
+        img {
+            height: 6rem;
+            width: 100%;
+        }
+
+    }
+
+    .current .item {
+        border: 2px solid #eaeaea;
+    }
+}
+
+
+
+.owl-theme {
+    .owl-nav {
+
+        /*default owl-theme theme reset .disabled:hover links */
+        [class*='owl-'] {
+            transition: all .3s ease;
+
+            &.disabled:hover {
+                background-color: #D6D6D6;
+            }
+        }
+
+    }
+}
+
+//arrows on first carousel
+#sync1.owl-theme {
+    position: relative;
+
+    .owl-next,
+    .owl-prev {
+        width: 22px;
+        height: 40px;
+        margin-top: -20px;
+        position: absolute;
+        top: 50%;
+        background: #f7f7f7;
+        width: 2rem;
+        border-radius: 4px;
+        transition: all 0.3s ease-in;
+
+        svg {
+            height: 30%;
+        }
+
+        &:hover{
+            background: #d9d9d9;
+        }
+    }
+
+    .owl-prev {
+        left: 10px;
+    }
+
+    .owl-next {
+        right: 10px;
+    }
+}
